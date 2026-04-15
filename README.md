@@ -43,3 +43,7 @@ now it implements Ollama's native HTTP API.
   startup.
 - `chat` handles both ordinary JSON responses and newline-delimited
   streamed JSON chunks returned by Ollama.
+
+## License
+
+MIT
