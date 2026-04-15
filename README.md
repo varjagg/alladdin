@@ -3,16 +3,11 @@
 `Alladdin` is a small Common Lisp client for local LLM backends. Right
 now it implements Ollama's native HTTP API.
 
-## Load
-
-```lisp
-(require :asdf)
-(asdf:load-system :alladdin)
-```
-
 ## Minimal Use
 
 ```lisp
+(asdf:load-system :alladdin)
+
 (let* ((backend (alladdin:make-ollama-backend
                  :default-model "qwen3:8b"
                  :request-timeout 900))
